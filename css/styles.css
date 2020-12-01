@@ -1,0 +1,293 @@
+body {
+  background-image: url("../images/forest-leaves.jpeg");
+  background-repeat: repeat-y;
+  color: #FFFFFF;
+  background-color: #000000;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.background_stretch {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+
+.background_right_stretch {
+  max-width: 100%;
+  height: auto;
+  top: 385px;
+  opacity: 0.75;
+}
+
+h1 {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.header_title {
+  grid-column: 1;
+  grid-row: 1;
+
+  text-align: left;
+  font-size: 20px;
+  color: silver;
+
+  z-index: 2;
+}
+
+.header_quote {
+  grid-column: 2;
+  grid-row: 1;
+
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+#hiking_logo {
+  position: fixed;
+  height: auto;
+  min-width: 75px;
+  width: 75px;
+
+  top: 15px;
+  left: 110px;
+
+  z-index: 4;
+}
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  min-width: 300px;
+  width: 300px;
+
+  top: 0px;
+  left: 0px;
+
+  color: #000000;
+  background: #FFFFFF;
+  padding: 100px 0px;
+  z-index:3;
+}
+
+#navbar header {
+  color: #000000;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 5px 0px;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  color: #696969;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+#main-doc {
+  position: absolute;
+
+  top: 30vw;
+  margin-left: 310px;
+
+  padding: 20px;
+}
+
+.container {
+  color: #FFFFFF;
+}
+
+Section {
+  background: rgb(230, 255, 255, 0.1);
+  padding: 2.5rem 2.5rem;
+  border-radius: 2rem;
+  width: 500px;
+  margin: auto;
+}
+
+Section header {
+  color: silver;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+Section footer {
+  text-align: center;
+}
+
+footer a {
+  color: #800000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+code {
+  color: orange;
+}
+
+@media only screen and (max-width: 414px) {
+
+  /* For mobile phones: */
+
+  body {
+    color: #FFFFFF;
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  #hiking_logo {
+    position: absolute;
+    min-width: 75px;
+    width: 75px;
+    height: auto;
+
+    top: 0px;
+    left: 0px;
+
+    top: 10px;
+    left: 18px;
+
+    z-index: 1;
+  }
+
+  #navbar {
+    position: fixed;
+    height: 100%;
+    min-width: 105px;
+    width: 105px;
+    font-size: 3vw;
+
+    top: 0px;
+    margin-top: 0px;
+    left: 0px;
+
+    color: #000000;
+    background: #FFFFFF;
+    padding: 100px 0px;
+
+    z-index: 9999;
+  }
+
+  #navbar header {
+    font-size: 3.5vw;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+
+  .header_title {
+    font-size: 2vw;
+  }
+
+  p {
+    font-size: 8px;
+  }
+
+  cite {
+    font-size: 10px;
+  }
+
+  .blockquote-footer {
+    font-size: 10px;
+  }
+
+  .header_quote: {
+    font-size: 1vw;
+  }
+
+  #navbar li {
+    list-style: none;
+    padding: 5px 0px;
+    margin-left: -40px;
+  }
+
+  #navbar a {
+    color: #696969;
+    text-decoration: none;
+  }
+
+  #background {
+    position: absolute;
+    width: 80%;
+    height: auto;
+
+    left: 105px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  #main-doc {
+    position: absolute;
+    min-width: 80%;
+    width: 80%;
+    height: auto;
+
+    top: 35vw;
+    margin-left: 105px;
+
+    padding: 5px;
+  }
+
+  Section {
+    background: rgb(230, 255, 255, 0.1);
+    padding: 0.5rem 0.5rem;
+    border-radius: 2rem;
+    width: 225px;
+    margin: auto;
+
+    font-size: 10px;
+  }
+
+  Section header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  Section p {
+    font-size: 12px;
+  }
+
+  Section footer {
+    text-align: center;
+  }
+
+  Section footer p {
+    font-size: 10px;
+  }
+
+  #background_right {
+    position: absolute;
+    width: 80%;
+    height: auto;
+
+    left: 105px;
+    top: 105px;
+    z-index: -1;
+  }
+}
